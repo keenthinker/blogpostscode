@@ -1,0 +1,25 @@
+{
+  "name": "tailwindcssplayground",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "tailwind:css": "postcss assets/css/tailwind.css -o assets/css/style.css",
+    "serve": "npm run tailwind:css && npm run start",
+    "tailwind:css-cont": "postcss assets/css/tailwind.css -o assets/css/style.css -w",
+    "serve-cont": "nodemon server.js"
+  },
+  "author": "keenthinker.com",
+  "license": "ISC",
+  "description": "TailwindCSS meets Express: A guide to effortles styling with pure JavaScript and without extra frameworks",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "autoprefixer": "^10.4.20",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
